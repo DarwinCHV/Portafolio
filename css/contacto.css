@@ -1,0 +1,88 @@
+
+/* ESTILO PARA C O N T A C T O */
+#contacto {
+    padding-top: 100px;
+    background: linear-gradient(
+        135deg,
+        #0a182d,
+        #1c2b40,
+        #0a182d,
+        #1c2b40,
+        #0a182d
+      );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Esto asegura que el contenido esté centrado verticalmente */
+    flex-direction: column; /* Asegura que los elementos se apilen */
+    text-align: center;
+}
+
+.contact-title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+/* Estilos del formulario de contacto */
+.contact-form{
+    background: #2c2e3b;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 100%;
+    max-width: 500px; /* Esto limita el tamaño del formulario */
+    margin: 0 auto; /* Centra el formulario */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Mejorar visibilidad de los botones */
+.send-message-btn,
+.publish-comment-btn {
+    background: linear-gradient(135deg, #34d399, #059669);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.send-message-btn:hover,
+.publish-comment-btn:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+    transform: translateY(-2px);
+}
+
+

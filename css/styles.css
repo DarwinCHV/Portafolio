@@ -1,0 +1,249 @@
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #11bf8d;
+    border-radius: 10px;
+}
+
+
+
+.linkedin-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0077B5; /* Color de LinkedIn */
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.linkedin-button:hover {
+    background-color: #005582; /* Color más oscuro al pasar el mouse */
+}
+
+.linkedin-button img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+/* Projects cards */
+.project-card {
+    background-color: #1b203e;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 #2a323b;
+    transition: 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 8px 60px 0 #303a45;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  .section {
+    padding: 60px 0;
+    width: 100%;
+  }
+  
+  /* Badges */
+  .badge-html {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: #ef642a;
+  }
+  
+  .badge-css {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: #399dd8;
+  }
+  
+  .badge-js {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: #dac41b;
+  }
+  
+  .badge-php {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: #a074c4;
+  }
+  
+  .badge-sql {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: #f55385;
+  }
+  
+  /* Projects cards BG*/
+  .project-cardBG {
+    background-color: #0d1724;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgb(42, 50, 59);
+    transition: 0.3s;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  /* Project BTN */
+  .preview-button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    border-radius: 500px;
+    overflow: hidden;
+    background: linear-gradient(to right, #ea489b, #833be8);
+    color: ghostwhite;
+    text-decoration: none;
+  }
+  
+  .preview-button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+  }
+  
+  .preview-button:hover span {
+    color: #2c2c2c;
+  }
+  
+  .preview-button::before,
+  .preview-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .preview-button::before {
+    content: "";
+    background: linear-gradient(to right, #833be8, #662eb4);
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .preview-button:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  /*Repo Btn*/
+  .repo-button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    border-radius: 500px;
+    overflow: hidden;
+    background: linear-gradient(to right, #4535c1, #77e4c8);
+    color: ghostwhite;
+    text-decoration: none;
+  }
+  
+  .repo-button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+  }
+  
+  .repo-button:hover span {
+    color: #2c2c2c;
+  }
+  
+  .repo-button::before,
+  .repo-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .repo-button::before {
+    content: "";
+    background: #5db39d;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .repo-button:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  /* Proyectos */
+.proyectos-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.proyectos-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #10b981;
+  margin-left: 20px;
+}
+
+.bg-proyectos {
+  background-color: #17212a;
+}
+
+/* Others */
+body {
+  /* padding-top: 190px; */
+  background-color: #334155;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+  
+
+.title_color {
+  color: #16f2b3;
+}
+

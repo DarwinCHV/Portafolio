@@ -1,0 +1,57 @@
+.title_color {
+    color: #11bf8d;
+}
+
+/* Habilidades */
+.habilidades-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
+.habilidades-title::before,
+.habilidades-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #10b981;
+}
+
+.habilidades-title::before {
+    margin-right: 20px;
+}
+
+.habilidades-title::after {
+    margin-left: 20px;
+}
+
+
+
+/* contac */
+.contact-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
+.contact-title::before,
+.contact-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #10b981;
+}
+
+.contact-title::before {
+    margin-right: 20px;
+}
+
+.contact-title::after {
+    margin-left: 20px;
+}

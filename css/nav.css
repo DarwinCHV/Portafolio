@@ -1,0 +1,114 @@
+
+/* Estilo Navbar */
+.navbar {
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: rgba(165, 165, 165, 0.12); /* Color de fondo con transparencia */
+    backdrop-filter: blur(12px);
+    margin: 20px 70px 0 70px;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 20px;
+        margin: 10px 20px 0 20px;
+    }
+
+    /* Estilo para el contenedor de la lista de navegación */
+    .navbar-collapse {
+        display: flex; /* Usar flexbox */
+        flex-direction: column; /* Cambiar a columna para el menú hamburguesa */
+        align-items: center; /* Centrar horizontalmente */
+    }
+
+    /* Estilo para la lista de navegación */
+    .navbar-nav {
+        display: flex; /* Usar flexbox para los elementos de la lista */
+        flex-direction: column; /* Cambiar a columna para el menú hamburguesa */
+        align-items: center; /* Centrar horizontalmente */
+        margin: 0; /* Eliminar márgenes */
+        padding: 0; /* Eliminar padding */
+    }
+
+    /* Estilo para los iconos de redes sociales */
+    .navbar-nav:last-child {
+        flex-direction: row; /* Cambiar a fila para los iconos */
+        justify-content: center; /* Centrar horizontalmente */
+        margin-top: 10px; /* Espacio entre la lista de navegación y los iconos */
+    }
+
+    /* Agregar margen a los elementos de la lista de iconos */
+    .navbar-nav:last-child .nav-item {
+        margin: 0 10px; /* Espacio horizontal entre los iconos */
+    }
+}
+
+/* Estilo para el logo */
+.logo-img {
+    width: 50px;          /* Tamaño de la imagen, puedes ajustarlo */
+    height: 50px;         /* Mantiene la altura igual para que sea un círculo perfecto */
+    border-radius: 50%;    /* Hace que la imagen sea circular */
+    object-fit: cover;     /* Asegura que la imagen se ajuste correctamente dentro del círculo */
+}
+
+/* Estilo del botón hamburguesa */
+.navbar-toggler {
+    border: none; /* Elimina el borde del botón */
+    padding: 0; /* Elimina el padding extra */
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del botón */
+    align-items: center;
+    width: 40px; /* Ajusta el tamaño del icono */
+    height: 40px;
+}
+
+/* Icono de hamburguesa (tres líneas) */
+.navbar-toggler-icon {
+    width: 25px;
+    height: 2px;
+    background-color: #fff; /* Color blanco para las líneas */
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Las líneas del icono hamburguesa */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Grosor de las líneas */
+    background-color: #fff; /* Color de las líneas */
+    transition: all 0.3s ease;
+}
+
+/* Posiciona las líneas superior e inferior */
+.navbar-toggler-icon::before {
+    top: -8px; /* Ajusta la posición de la línea superior */
+}
+
+.navbar-toggler-icon::after {
+    top: 8px; /* Ajusta la posición de la línea inferior */
+}
+
+/* Cuando el menú está abierto y el botón tiene la clase 'collapsed' */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+    transform: rotate(45deg); /* Gira la línea superior */
+    top: 0; /* Centra la línea superior */
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+    transform: rotate(-45deg); /* Gira la línea inferior */
+    top: 0; /* Centra la línea inferior */
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-color: transparent; /* Hace invisible la línea central */
+}
+
+/* Estilo para enlaces activos */
+.nav-link.active {
+    color: #10b981;
+    font-weight: bold;
+}
