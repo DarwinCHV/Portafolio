@@ -76,6 +76,18 @@
     margin-bottom: 1rem;
     background-color: #399dd8;
   }
+
+  .badge-java {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: #007396 ;
+  }
+
+  .badge-angular {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: #DD0031;
+  }
   
   .badge-js {
     margin-top: 0;
@@ -89,10 +101,15 @@
     background-color: #a074c4;
   }
   
-  .badge-sql {
+  .badge-mysql {
     margin-top: 0;
     margin-bottom: 1rem;
     background-color: #f55385;
+  }
+  .badge-flutter {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    background-color: #02569B;
   }
   
   /* Projects cards BG*/

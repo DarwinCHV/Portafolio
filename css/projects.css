@@ -1,0 +1,24 @@
+/* Estilo para el botón de carpeta encima del de LinkedIn */
+.folder-button {
+    position: fixed;
+    bottom: 90px;  /* Ajusta para que quede encima del botón de LinkedIn */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #f9d920; /* Color de carpeta (puedes cambiarlo) */
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .folder-button:hover {
+    background-color: #FFC107; /* Color más oscuro al pasar el mouse */
+  }
+  
+  .folder-button i {
+    color: #ffffff;
+    font-size: 30px;
+  }
