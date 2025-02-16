@@ -21,7 +21,7 @@ function iniciarAnimacionTexto() {
     const phrases = [
       "de Software",
       "Backend",
-      "Bade de Datos",    
+      "de Base de Datos",    
     ];
   
     let currentPhraseIndex = 0;
